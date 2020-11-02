@@ -135,7 +135,7 @@ function closeModal () {
            closeModal();
        }
    });
-<<<<<<< Updated upstream
+
 
 
  const modalTimerId = setTimeout(openModal, 3000);
@@ -187,9 +187,6 @@ function closeModal () {
             <div class="menu__item-cost">Цена:</div>
             <div class="menu__item-total"><span>${this.price}</span> грн/день</div>
         </div>
-    ,
-    'menu__item',
-    'big'
     `;
     this.parent.append(element);
     }
@@ -231,9 +228,3 @@ function closeModal () {
  ).render(); 
 
 });
-=======
-});
-
-
-
->>>>>>> Stashed changes
