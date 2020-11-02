@@ -135,6 +135,7 @@ function closeModal () {
            closeModal();
        }
    });
+<<<<<<< Updated upstream
 
 
  const modalTimerId = setTimeout(openModal, 3000);
@@ -230,3 +231,9 @@ function closeModal () {
  ).render(); 
 
 });
+=======
+});
+
+
+
+>>>>>>> Stashed changes
