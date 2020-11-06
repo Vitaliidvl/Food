@@ -304,7 +304,7 @@ function closeModal () {
                 object[key] = value;
             });
 
-            const json = JSON.stringify(object);
+                                const json = JSON.stringify(object);
 
             request.send(json);
 
