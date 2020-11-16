@@ -26,15 +26,15 @@ if (n < 1) {
 slides.forEach(item => item.style.display = 'none');
 
 slides[slideIndex -1].style.display = 'block';
-}
+
 
 if (slides.length < 10) {
     current.textContent = `0${slideIndex}`;
 
-} else {
+   } else {
     current.textContent = slideIndex;
+  }
 }
-
 function plusSlides(n) {
 showSlides(slideIndex += n);
 }
