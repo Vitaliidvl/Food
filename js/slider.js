@@ -46,3 +46,5 @@ plusSlides(-1);
 next.addEventListener('click', () => {
 plusSlides(1);    
 });
+
+
