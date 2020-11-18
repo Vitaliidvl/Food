@@ -556,6 +556,16 @@ dots.forEach(dot => {
     dots[slideIndex - 1].style.opacity = 1;  
     });
 });
+
+
+//Calculator
+
+const result = document.querySelector('.calculating__result span');
+
+let sex, height, weight, age, ratio;
+ 
+ 
+
 // showSlides(slideIndex);
 
 // if (slides.length < 10) {
@@ -614,5 +624,4 @@ dots.forEach(dot => {
 
    
 });
-
 
