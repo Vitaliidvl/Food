@@ -587,9 +587,11 @@ let sex = 'female',
         elem.addEventListener('click', (e) => {
             if (e.target.getAttribute('data-ratio')) {
                 ratio = +e.target.getAttribute('data-ratio');
+                localStorage.setItem('ratio', +e.target.getAttribute('data-ratio'));
     
             } else {
                 sex = e.target.getAttribute('id');
+                localStorage.setItem('sex', e.target.getAttribute('id'));
             }
     
             elements.forEach(elem => {
@@ -611,6 +613,12 @@ let sex = 'female',
      const input = document.querySelector(selector);
 
      input.addEventListener('input', () => {
+        if (input.value.match(/\D/g)) {
+            input.style.border = '1px solid red';
+        } else {
+            input.style.border = 'none';
+        }
+
         switch(input.getAttribute('id')) {
             case 'height':
                 height = +input.value;
