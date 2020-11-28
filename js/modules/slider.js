@@ -1,15 +1,24 @@
-function slider() {
+function slider({
+  container,
+  slide,
+  nextArrow,
+  prevArrow,
+  totalCounter,
+  currentCounter,
+  wrapper,
+  field,
+}) {
   //Slider
 
-  const slides = document.querySelectorAll('.offer__slide'),
-    slider = document.querySelector('.offer__slider'),
-    prev = document.querySelector('.offer__slider-prev'),
-    next = document.querySelector('.offer__slider-next'),
-    total = document.querySelector('#total'),
-    current = document.querySelector('#current'),
-    slidesWrapper = document.querySelector('.offer__slider-wrapper'),
+  const slides = document.querySelectorAll(slide),
+    slider = document.querySelector(container),
+    prev = document.querySelector(prevArrow),
+    next = document.querySelector(nextArrow),
+    total = document.querySelector(totalCounter),
+    current = document.querySelector(currentCounter),
+    slidesWrapper = document.querySelector(wrapper),
     width = window.getComputedStyle(slidesWrapper).width,
-    slidesField = document.querySelector('.offer__slider-inner');
+    slidesField = document.querySelector(field);
 
   let slideIndex = 1;
   let offset = 0;
@@ -123,7 +132,7 @@ list-style: none;
       current.textContent = `0${slideIndex}`;
     } else {
       current.textContent = slideIndex;
-      a;
+      
     }
 
     dots.forEach((dot) => (dot.style.opacity = '.5'));
@@ -148,4 +157,4 @@ list-style: none;
     });
   });
 }
-module.exports = slider;
+export default slider;
